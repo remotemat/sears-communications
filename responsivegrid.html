@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equic="X-UA-Compatible" content=ie="edge">
+    <title>Sears Communications</title>                      
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Libre+Franklin|Righteous" rel="stylesheet">
+
+</head>
+    
+
+<style>
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+    left: 3vw;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin: 20px;
+    width: 300px;
+    background-color: transparent;
+    left: 15vw;
+    text-align: center;
+    
+}
+
+.flip-card-inner {
+  background: rgba(73,155,234,1);
+background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(144,71,255,0.49) 62%, rgba(144,71,255,0.18) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(62%, rgba(144,71,255,0.49)), color-stop(100%, rgba(144,71,255,0.18)));
+background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(144,71,255,0.49) 62%, rgba(144,71,255,0.18) 100%);
+background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(144,71,255,0.49) 62%, rgba(144,71,255,0.18) 100%);
+background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(144,71,255,0.49) 62%, rgba(144,71,255,0.18) 100%);
+background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(144,71,255,0.49) 62%, rgba(144,71,255,0.18) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#9047ff', GradientType=0 );
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+    width: 300px;
+    height: 300px;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: none;
+  color: black;
+  z-index: 2; 
+    width: 300px;
+}
+    img {
+        padding-bottom: -150px;
+    }
+    
+.flip-card-back {
+background: -webkit-radial-gradient(center, ellipse cover, rgba(183,222,237,1) 0%, rgba(183,222,237,0.98) 5%, rgba(113,206,239,0.91) 19%, rgba(33,180,226,0.8) 43%, rgba(145,71,255,0.8) 64%);
+background: -o-radial-gradient(center, ellipse cover, rgba(183,222,237,1) 0%, rgba(183,222,237,0.98) 5%, rgba(113,206,239,0.91) 19%, rgba(33,180,226,0.8) 43%, rgba(145,71,255,0.8) 64%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(183,222,237,1) 0%, rgba(183,222,237,0.98) 5%, rgba(113,206,239,0.91) 19%, rgba(33,180,226,0.8) 43%, rgba(145,71,255,0.8) 64%);
+background: radial-gradient(ellipse at center, rgba(183,222,237,1) 0%, rgba(183,222,237,0.98) 5%, rgba(113,206,239,0.91) 19%, rgba(33,180,226,0.8) 43%, rgba(145,71,255,0.8) 64%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#9147ff', GradientType=1 );
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+.flip-title {
+    font-family: 'Righteous', cursive;
+    padding: 65px 5px 5px 5px;
+    color: white;
+}
+.flip-subtitle {
+    position: relative;
+    padding-top: 320px;
+    left: 0vw;
+    width: 300px;
+}
+    
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1
+  }
+
+</style>
+<div class="container">
+  <div class='row'>
+    <div class='column'>
+     
+        <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/luke-chesser-1399685-unsplash.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 class="flip-title">ESTABLISHED GLOBAL CONNECTIONS</h1> 
+  
+    </div>
+  </div>
+    <p class="flip-subtitle">Managing connectivity services for businesses in the UK and internationally our connections span the globe.</p>
+    </div>
+    <div class='column'>
+      
+       <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/bernard-hermant-590572-unsplash.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 class="flip-title">FULL CATALOGUE OF SERVICES</h1> 
+      
+    </div>
+  </div>
+   <p class="flip-subtitle">From data and telecoms to networks and IT infrastructure we have the range of services to get the job done.</p> 
+    </div>
+    <div class='column'>
+     
+       <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/stephen-dawson-670638-unsplash.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 class="flip-title">FLEXIBLE HOSTING OPTIONS</h1> 
+    
+    </div>
+   
+    </div>
+        <p class="flip-subtitle">Hosted off premises at one of our state of the are locations or host on premises for your convience..</p> 
+  </div>
+  </div>
+    </div>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</html>
